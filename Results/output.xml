@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-07-13T16:20:18.804145" rpa="false" schemaversion="5">
+<suite id="s1" name="Onepage" source="C:\Users\Milan Thakkar\PycharmProjects\pythonRobotProject1\TestSuite\onepage.robot">
+<test id="s1-t1" name="This is test1" line="12">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:18.991696" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:18.991696" elapsed="1.862629"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:20.854325" elapsed="0.027950"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:18.991696" elapsed="1.890579"/>
+</kw>
+<kw name="Test001_LoginFunctionality" owner="userDefineKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:20.882275" level="INFO">Typing text 'mananathakkar' into text field 'inputEmail'.</msg>
+<arg>${email_loc}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:20.882275" elapsed="0.178311"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:21.061636" level="INFO">Typing text 'manaan' into text field 'inputPassword'.</msg>
+<arg>${pass_loc}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.061636" elapsed="0.096296"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:21.159208" level="INFO">Sending key(s) ('ENTER',) to inputPassword element.</msg>
+<msg time="2024-07-13T16:20:21.443770" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-07-13T16:20:21.443770" level="INFO">Releasing special key ENTER.</msg>
+<arg>${pass_loc}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.157932" elapsed="0.310428"/>
+</kw>
+<arg>mananathakkar</arg>
+<arg>manaan</arg>
+<status status="PASS" start="2024-07-13T16:20:20.882275" elapsed="0.586085"/>
+</kw>
+<kw name="ElementonPage" owner="commonfunctionality">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:21.483614" level="INFO">Current page contains element 'inputEmail'.</msg>
+<arg>${element}</arg>
+<arg>Element is present</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.468360" elapsed="0.015254"/>
+</kw>
+<arg>${email_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:21.468360" elapsed="0.015254"/>
+</kw>
+<kw name="ElementonPage" owner="commonfunctionality">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:21.497127" level="INFO">Current page contains element 'inputPassword'.</msg>
+<arg>${element}</arg>
+<arg>Element is present</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.483614" elapsed="0.013513"/>
+</kw>
+<arg>${pass_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:21.483614" elapsed="0.013513"/>
+</kw>
+<kw name="ButtonOnPage" owner="commonfunctionality">
+<kw name="Page Should Contain Button" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:21.527759" level="INFO">Current page contains button '//button[text()='Sign in']'.</msg>
+<arg>${button}</arg>
+<arg>button is present</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.498286" elapsed="0.029473"/>
+</kw>
+<arg>${SignOn_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:21.498286" elapsed="0.029473"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:21.527759" elapsed="2.148528"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:21.527759" elapsed="2.148528"/>
+</kw>
+<doc>OnePageTest</doc>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-07-13T16:20:18.991696" elapsed="4.684591"/>
+</test>
+<test id="s1-t2" name="This is test2" line="21">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:23.676287" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:23.676287" elapsed="1.758768"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.436055" elapsed="0.040387"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:23.676287" elapsed="1.800155"/>
+</kw>
+<kw name="Test002_countofvalues" owner="userDefineKeywords">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:25.499228" level="INFO">@{002_values} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="0d4bb31c2dcfa279784640a586eb93e5", element="f.D6F76726ADCA2064BD5F36D8AEF6C1C3.d.DBBF1CA35605326EE0AD66F033AA6A03.e.5")&gt; | &lt;selenium.webdri...</msg>
+<var>@{002_values}</var>
+<arg>//li[@class='list-group-item justify-content-between']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.476442" elapsed="0.022786"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-07-13T16:20:25.500215" level="INFO">Length is 3.</msg>
+<msg time="2024-07-13T16:20:25.500215" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>${002_values}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.500215" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-07-13T16:20:25.501204" level="INFO">${actcount} = 3</msg>
+<var>${actcount}</var>
+<arg>3</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.501204" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${count}</arg>
+<arg>${actcount}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.501204" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:25.476442" elapsed="0.024762"/>
+</kw>
+<kw name="Test002_nameofvalue" owner="userDefineKeywords">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:25.508180" level="INFO">@{002_values} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="0d4bb31c2dcfa279784640a586eb93e5", element="f.D6F76726ADCA2064BD5F36D8AEF6C1C3.d.DBBF1CA35605326EE0AD66F033AA6A03.e.5")&gt; | &lt;selenium.webdri...</msg>
+<var>@{002_values}</var>
+<arg>//li[@class='list-group-item justify-content-between']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.502200" elapsed="0.005980"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:25.510805" level="INFO">${val_name} = List Item 2 6</msg>
+<var>${val_name}</var>
+<arg>${002_values}[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.508180" elapsed="0.002625"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${val_name}</arg>
+<arg>List Item 2 6</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.510805" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:25.502200" elapsed="0.008605"/>
+</kw>
+<kw name="Test002_nameofvalueofvalue" owner="userDefineKeywords">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:25.536634" level="INFO">@{002_values_value} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="0d4bb31c2dcfa279784640a586eb93e5", element="f.D6F76726ADCA2064BD5F36D8AEF6C1C3.d.DBBF1CA35605326EE0AD66F033AA6A03.e.8")&gt; | &lt;selenium.webdri...</msg>
+<var>@{002_values_value}</var>
+<arg>//span[@class='badge badge-pill badge-primary']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.510805" elapsed="0.025829"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:25.547129" level="INFO">${val_val_name} = 6</msg>
+<var>${val_val_name}</var>
+<arg>${002_values_value}[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.537968" elapsed="0.009161"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${val_val_name}</arg>
+<arg>6</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.547129" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:25.510805" elapsed="0.036324"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:25.548124" elapsed="2.161305"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:25.548124" elapsed="2.161305"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-13T16:20:23.676287" elapsed="4.033142"/>
+</test>
+<test id="s1-t3" name="This is test3" line="27">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:27.709429" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:27.709429" elapsed="1.667983"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.377845" elapsed="0.046870"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:27.709429" elapsed="1.715286"/>
+</kw>
+<kw name="TextofElement" owner="commonfunctionality">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:29.460433" level="INFO">${textelement} = Option 1</msg>
+<var>${textelement}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.424715" elapsed="0.035718"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${textelement}</arg>
+<arg>${acttext}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.460433" elapsed="0.000997"/>
+</kw>
+<arg>${dropdown_loc}</arg>
+<arg>Option 1</arg>
+<status status="PASS" start="2024-07-13T16:20:29.424715" elapsed="0.036715"/>
+</kw>
+<kw name="ElementClick" owner="commonfunctionality">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:29.463428" level="INFO">Clicking element 'dropdownMenuButton'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.463428" elapsed="0.072887"/>
+</kw>
+<arg>${dropdown_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:29.462428" elapsed="0.073887"/>
+</kw>
+<kw name="ElementClick" owner="commonfunctionality">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:29.536315" level="INFO">Clicking element '//a[@class='dropdown-item'][text()='Option 3']'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.536315" elapsed="0.054842"/>
+</kw>
+<arg>${dropdownval_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:29.536315" elapsed="0.054842"/>
+</kw>
+<kw name="TextofElement" owner="commonfunctionality">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:29.608376" level="INFO">${textelement} = Option 3</msg>
+<var>${textelement}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.592683" elapsed="0.015693"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${textelement}</arg>
+<arg>${acttext}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.608376" elapsed="0.000788"/>
+</kw>
+<arg>${dropdown_loc}</arg>
+<arg>Option 3</arg>
+<status status="PASS" start="2024-07-13T16:20:29.592101" elapsed="0.017063"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:29.609795" elapsed="2.145849"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:29.609795" elapsed="2.145849"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-13T16:20:27.709429" elapsed="4.046215"/>
+</test>
+<test id="s1-t4" name="This is test4" line="34">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:31.755644" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:31.755644" elapsed="1.794560"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:33.550204" elapsed="0.037301"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:31.755644" elapsed="1.831861"/>
+</kw>
+<kw name="ButtonEnable" owner="commonfunctionality">
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-13T16:20:33.587505" elapsed="0.049491"/>
+</kw>
+<arg>${test4_butt_one}</arg>
+<status status="PASS" start="2024-07-13T16:20:33.587505" elapsed="0.049491"/>
+</kw>
+<kw name="ButtonDisable" owner="commonfunctionality">
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2024-07-13T16:20:33.636996" elapsed="0.018888"/>
+</kw>
+<arg>${test4_butt_two}</arg>
+<status status="PASS" start="2024-07-13T16:20:33.636996" elapsed="0.018888"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:33.655884" elapsed="2.173667"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:33.655884" elapsed="2.173667"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-13T16:20:31.755644" elapsed="4.073907"/>
+</test>
+<test id="s1-t5" name="This is test5" line="39">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:35.829551" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:35.829551" elapsed="1.763573"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:37.593124" elapsed="0.026909"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:35.829551" elapsed="1.790482"/>
+</kw>
+<kw name="Scrolltoelement" owner="commonfunctionality">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-07-13T16:20:37.620033" elapsed="0.327854"/>
+</kw>
+<arg>${test6_loc}</arg>
+<status status="PASS" start="2024-07-13T16:20:37.620033" elapsed="0.327854"/>
+</kw>
+<kw name="ElementWait" owner="commonfunctionality">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-13T16:20:37.947887" elapsed="4.649807"/>
+</kw>
+<arg>${test5_butt}</arg>
+<status status="PASS" start="2024-07-13T16:20:37.947887" elapsed="4.649807"/>
+</kw>
+<kw name="ButtonClick" owner="commonfunctionality">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:42.597694" level="INFO">Clicking button '//div[@id='test-5-div']/button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:42.597694" elapsed="0.051506"/>
+</kw>
+<arg>${test5_butt}</arg>
+<status status="PASS" start="2024-07-13T16:20:42.597694" elapsed="0.051506"/>
+</kw>
+<kw name="ElementonPage" owner="commonfunctionality">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:42.649200" level="INFO">Current page contains element '//div[@class='alert alert-success']'.</msg>
+<arg>${element}</arg>
+<arg>Element is present</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-13T16:20:42.649200" elapsed="0.000000"/>
+</kw>
+<arg>${test5_alert}</arg>
+<status status="PASS" start="2024-07-13T16:20:42.649200" elapsed="0.000000"/>
+</kw>
+<kw name="ButtonDisable" owner="commonfunctionality">
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2024-07-13T16:20:42.649200" elapsed="0.022290"/>
+</kw>
+<arg>${test5_butt}</arg>
+<status status="PASS" start="2024-07-13T16:20:42.649200" elapsed="0.022290"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:42.672486" elapsed="2.141175"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:42.672486" elapsed="2.141175"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-13T16:20:35.829551" elapsed="8.984110"/>
+</test>
+<test id="s1-t6" name="This is test6" line="47">
+<kw name="StartTest" owner="commonfunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:44.813661" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Milan%20Thakkar/Downloads/QE-index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-13T16:20:44.813661" elapsed="1.661743"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-13T16:20:46.475963" elapsed="0.025209"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:44.813661" elapsed="1.687511"/>
+</kw>
+<kw name="Test006_valfromTable" owner="userDefineKeywords">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T16:20:46.525673" level="INFO">${tab_val} = Ventosanzap</msg>
+<var>${tab_val}</var>
+<arg>//tbody/tr[${i}]/td[${j}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T16:20:46.501172" elapsed="0.024501"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${tab_val}</arg>
+<arg>${exptext}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-13T16:20:46.525673" elapsed="0.000000"/>
+</kw>
+<arg>3</arg>
+<arg>3</arg>
+<arg>Ventosanzap</arg>
+<status status="PASS" start="2024-07-13T16:20:46.501172" elapsed="0.024501"/>
+</kw>
+<kw name="FinishTest" owner="commonfunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-13T16:20:46.525673" elapsed="2.161150"/>
+</kw>
+<status status="PASS" start="2024-07-13T16:20:46.525673" elapsed="2.161763"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-13T16:20:44.813661" elapsed="3.873775"/>
+</test>
+<status status="PASS" start="2024-07-13T16:20:18.804145" elapsed="29.884071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Onepage">Onepage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
